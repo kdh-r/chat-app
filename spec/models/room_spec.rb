@@ -10,6 +10,7 @@ RSpec.describe Room, type: :model do
       expect(@room).to be_valid
 
     end
+    
     it "nameが空では登録できないこと" do
       @room.name = nil
       @room.valid?

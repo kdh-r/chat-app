@@ -5,6 +5,8 @@ RSpec.describe "チャットルームの削除機能", type: :system do
     @room_user = FactoryBot.create(:room_user)
   end
 
+
+  
   it 'チャットルームを削除すると、関連するメッセージがすべて削除されていること' do
     # サインインする
     sign_in(@room_user.user)
